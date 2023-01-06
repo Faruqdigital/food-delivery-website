@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -25,22 +24,27 @@ header {
     justify-content: space-between;
 }
 
+/* navigation items */
+
 nav ul {
     display: flex;
     list-style: none;
-    padding-top: 17px;
+    padding-top: 66px;
     gap: 60px;
 }
 
 nav ul li a {
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     color: #252B42;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #FA4A0C;
 }
+
+/* main section */
 
 /* hero section */
 
@@ -58,22 +62,23 @@ nav ul li a:hover{
     padding-top: 50px;
     margin-bottom: 17px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 .hero-text h1 {
     margin-bottom: 24px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 58px;
+    line-height: 80px;
     letter-spacing: 0.2px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-text p {
     margin-bottom: 24px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 38px;
     letter-spacing: 0.2px;
 }
@@ -91,7 +96,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-.btn .play-store:hover{
+.btn .play-store:hover {
     background-color: rgb(160, 111, 111);
 }
 
@@ -103,7 +108,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-.btn .app-store:hover{
+.btn .app-store:hover {
     background-color: white;
     color: black;
 }
@@ -113,9 +118,14 @@ nav ul li a:hover{
     justify-content: center;
 }
 
+.hero-img img {
+    width: 548px;
+    height: 640px;
+}
+
 /* app working section */
 
-.blog-part{
+.blog-part {
     padding-top: 420px;
 }
 
@@ -123,18 +133,114 @@ nav ul li a:hover{
     padding-bottom: 80px;
 }
 
+hr{
+    border: 2px solid #E4E4E4;
+    margin-bottom: 32px;
+}
+
 .top-head h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 44px;
+    font-weight: 600;
     letter-spacing: 1px;
     padding-top: 22px;
+    color:  #000000;
+    font-family: 'Poppins', sans-serif;
 }
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.blog img {
+    max-width: 40%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content h2{
+    font-size: 40px;
+    color: #252B42;
+}
+
+.content p{
+    font-size: 24px;
+    color: #737373;
+    font-weight: 500;
+}
+
+.content a {
+    text-decoration: none;
+    color: #FA4A0C;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* download section */
+
+.download {
+    background-image: url(images/food-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 516px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.download p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.footer p{
+    color: #5C5C5C;
+    margin-top: 38px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon i {
+    margin-top: 36px;
+    font-size: 36px;
+    color: #FA4A0C;
+}
+
 
 /* media screen */
 
-@media (max-width:576px) {
+@media (max-width: 600px) {
     .hero-content {
-        background-image:none;
+        background-image: none;
         height: 560px;
         color: black;
     }
@@ -158,7 +264,7 @@ nav ul li a:hover{
         border: 1px solid #FA4A0C;
     }
 
-    .top-head{
+    .top-head {
         margin-top: 100px;
         margin-bottom: 40px;
     }
